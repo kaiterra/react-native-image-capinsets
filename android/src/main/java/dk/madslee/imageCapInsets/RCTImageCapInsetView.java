@@ -46,6 +46,9 @@ public class RCTImageCapInsetView extends ImageView {
                 // int right = bitmap.getWidth() - (mCapInsets.right * ratio);
                 // int bottom = bitmap.getHeight() - (mCapInsets.bottom * ratio);
                 // int left = mCapInsets.left * ratio;
+                if (bitmap == null) {
+                    return;
+                }
                 int top = mCapInsets.top;
                 int right = bitmap.getWidth() - mCapInsets.right;
                 int bottom = bitmap.getHeight() - mCapInsets.bottom;
